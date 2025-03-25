@@ -32,13 +32,6 @@ repos:
       - id: markdown-toc
         args: [--bullets=-, -i]
 
-  # infrastructure pre-commit hooks
-  # We put this before the markdownlint because terraform-docs generates markdown
-  - repo: https://github.com/hadolint/hadolint
-    rev: v2.10.0
-    hooks:
-      - id: hadolint-docker
-
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.74.1
     hooks:
