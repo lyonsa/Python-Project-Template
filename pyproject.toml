@@ -8,6 +8,10 @@ readme = "README.md"
 authors = [
     { name = "Allen Lyons", email = "allyons16@gmail.com" },
 ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
 dependencies = [
 ]
 
@@ -22,14 +26,14 @@ dev = [
 ]
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3,<4"]
+build-backend = "flit_core.buildapi"
 
 [project.urls]
 homepage = "https://github.com/lyonsa/Python-Project-Template.git"
 
-[tool.setuptools]
-package-dir = { "" = "src" }
+[tool.flit.module]
+name = "project_name"
 
 packages = [
     "project_name",
