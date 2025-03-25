@@ -15,7 +15,7 @@ WORKDIR /home/app
 
 ENV VIRTUALENV=/home/realpython/venv
 RUN python3 -m venv $VIRTUALENV
-ENV PATH="$VIRTUALENV/bin:$PATH" easier container logging
+ENV PATH="$VIRTUALENV/bin:$PATH"
 
 ENV PYTHONUNBUFFERED=1
 
