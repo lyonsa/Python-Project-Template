@@ -183,3 +183,5 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 *.lnk
+
+.dev_container_logs
